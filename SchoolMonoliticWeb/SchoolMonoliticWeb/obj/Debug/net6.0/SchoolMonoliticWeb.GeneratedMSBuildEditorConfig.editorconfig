@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\prosa\SchoolSaMonolitica\SchoolMonoliticWeb\SchoolMonoliticWeb
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/prosa/SchoolSaMonolitica/SchoolMonoliticWeb/SchoolMonoliticWeb/Views/Department/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/prosa/SchoolSaMonolitica/SchoolMonoliticWeb/SchoolMonoliticWeb/Views/Department/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/prosa/SchoolSaMonolitica/SchoolMonoliticWeb/SchoolMonoliticWeb/Views/Department/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/prosa/SchoolSaMonolitica/SchoolMonoliticWeb/SchoolMonoliticWeb/Views/Department/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/prosa/SchoolSaMonolitica/SchoolMonoliticWeb/SchoolMonoliticWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

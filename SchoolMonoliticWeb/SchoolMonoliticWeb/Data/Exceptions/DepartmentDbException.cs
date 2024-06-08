@@ -1,6 +1,6 @@
 ﻿namespace SchoolMonoliticWeb.Data.Exceptions
 {
-    public class DepartmentDbException : Exception
+    public class DepartmentDbException : ArgumentNullException
     {
         public DepartmentDbException(string message) : base(message)
         {

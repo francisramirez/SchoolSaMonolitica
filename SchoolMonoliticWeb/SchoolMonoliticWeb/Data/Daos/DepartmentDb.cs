@@ -20,11 +20,8 @@ namespace SchoolMonoliticWeb.Data.Daos
 
             var department = this.context.Departments.Find(departmentId);
 
-            if (department is null)
-            {
-                throw new DepartmentDbException("Este departamento no se encuentra registrado.");
-
-            }
+            ArgumentNullException.ThrowIfNull(department, "Este departamento no se encuentra registrado.");
+           
 
             DepartmentModel departmentModel = new DepartmentModel()
             {
@@ -56,7 +53,8 @@ namespace SchoolMonoliticWeb.Data.Daos
 
         public void RemoveDepartment(DepartmentRemoveModel removeModel)
         {
-            var departmentToRemove = this.context.Departments.Find(removeModel.DepartmentId);
+            var departmentToRemove = this.context.Departments
+                                                 .Find(removeModel.DepartmentId);
 
             if (departmentToRemove is null)
             {
@@ -84,7 +82,7 @@ namespace SchoolMonoliticWeb.Data.Daos
                 StartDate = departmentAdd.StartDate
             };
 
-            this.context.Departments.Add(department);
+        this.context.Departments.Add(department);
             this.context.SaveChanges();
         }
 
@@ -98,6 +96,15 @@ namespace SchoolMonoliticWeb.Data.Daos
 
             }
 
+            departmentToUpdate.Name = departmentUpdate.Name;
+            departmentToUpdate.StartDate = departmentUpdate.StartDate;
+            departmentToUpdate.Budget = departmentUpdate.Budget;
+            departmentToUpdate.Administrator = departmentUpdate.Administrator;
+            departmentToUpdate.UserMod = departmentUpdate.ModifyUser;
+            departmentToUpdate.ModifyDate = departmentUpdate.ModifyDate;
+
+            this.context.Departments.Update(departmentToUpdate);
+            this.context.SaveChanges();
 
         }
     }
